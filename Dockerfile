@@ -16,7 +16,7 @@ RUN apt-add-repository ppa:brightbox/ruby-ng -y && \
     add-apt-repository 'deb http://www.rabbitmq.com/debian/ testing main' && \
     apt-get update -qq && \
     export DEBIAN_FRONTEND=noninteractive && \
-    apt install -y ruby2.3 ruby2.3-dev build-essential mysql-server libmysqlclient-dev rabbitmq-server nodejs git nginx && \
+    apt install -y ruby2.3 ruby2.3-dev build-essential mysql-server libmysqlclient-dev rabbitmq-server nodejs git nginx libffi-dev && \
     gem install bundler procodile --no-rdoc --no-ri
 
 # Setup mariadb
